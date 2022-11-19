@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #dbd5d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+   }
+
+.body_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Header section*/
+.header{
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+.header_left{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.header_right{
+    display: flex;
+}
+
+/*LinkedIn Logo and Search Bar*/
+.header_left img{
+    height: 40px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.header_search{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.header_search input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+/* Header Option */
+.headerOption{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+    justify-content: center;
+}
+.headerOption:hover{
+    color: black;
+}
+.headerOption h3{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 40px;
+}
+.headerOption_icon{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+/*Header Option Icon Badges */
+.icon-button__badge{
+    position: absolute;
+    margin-top: -40px;
+    margin-right: -25px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+/* Header Option info */
+.headerOption_info{    
+    display: flex;
+    flex-direction: row;
+    border-left: 0.1px solid gray;
+    margin-left: 2px;
+    padding: 2px;
+    color: gray;
+    font-size: 12px;
+}
+.headerOption_info img{
+    position: relative;
+    width: 25px;
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+    padding: 5px;     
+}
+.headerOption_info img:hover{
+    cursor: pointer;
+}
+.headerOption_premiumplan h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 40px;
+}
+.headerOption_premiumplan h3:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/*Main Body */
+.body_main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;     
+}
+.highlights{
+    color: gray;
+}
+/*Sidebar Section*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%; 
+    background-color: white;
+    margin-top: 2px;   
+    height: fit-content;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/*Sidebar background image*/
+.bg img{
+    height: 70px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;            
+}
+/*Sidebar profile icon image*/
+.dp img{
+    margin-top: -25px;
+}
+.sidebar__top{
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    padding-bottom:10px;
+    text-align: center;   
+}
+.sidebar__statsection{
+    padding: 3px;
+    border-bottom: 0.1px solid lightgray;
+    justify-content: space-between;
+}
+.sidebar__stat{
+    padding: 1px;
+    border: 1px solid lightgray;
+    margin-bottom: 1px;
+    background-color: white;           
+}
+.sidebar__stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+.sidebar__statName{
+    float: left;
+}
+.grownetwork{
+    font-size: 12px;
+    display: flex;
+    color: black;
+    font-weight: bolder;
+    padding-left: 3px;   
+}
+.sidebar__statNumber {
+    color: blue;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;    
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    text-align: start;  
+    border-top: none;
+}
+.myItems{
+    display: flex;
+    background-color: white;
+    padding: 8px;
+    border-bottom: 0.2px solid  lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.My_Items{
+    margin-left: 8px;
+}
+
+/*Sidebar Bottom Section*/
+.sidebar__bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sidebar__bottom__heading{
+    color: blue;
+    padding: 5px;
+}
+.sidebar__bottom p{
+   padding: 3px;
+   margin-bottom: 2px;    
+}
+.sidebar__groupItem{
+    display: flex-container;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.group-iconname{
+    position: relative;
+    margin-top: -23px;  
+    margin-left: 29px;     
+}
+
+.sidebar__groupItem h2{
+    font-size: 16px;
+    padding: 5px;  
+}
+
+/*Feed Section */
+.Feed{
+    width: 60%;
+    margin: 5 0 5 13px;
+    cursor: pointer;
+}
+
+/*Feed Input Section Starts*/
+.startpost{
+    display: flex;
+    flex-direction: row;  
+    background-color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;    
+}
+.startpost img{
+    margin-top: 9px;
+}
+
+.createPost{    
+    display: flex;
+    width: 90%;       
+    padding: 10px;    
+}
+.createPost input{
+    border: 1px solid lightgray;
+    border-radius: 30px;     
+    height: 40px;
+    width: 95%;  
+    padding: 10px;    
+    border-radius: 20px;             
+}
+.feed__inputOption{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.inputOption{
+    display: flex;
+    position: relative;    
+    color: gray;
+    justify-content: space-evenly;
+}
+.inputOption p{
+    position: relative;
+    margin-left: 5px;
+    margin-top: 4px;    
+}
+/*Feed Input Section Ends*/
+/*Post Section Starts*/
+.Posts{
+    margin: 0px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+.Post_Header img{
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-left: 10px;
+    padding-right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 1px;
+}
+.Post_Infostat{    
+    font-size: 10px;
+    margin-top: -38px;
+    padding-left: 60px;
+}
+.Post_Infostat p{
+    font-size: 10px;
+    color: gray;
+}
+.Post_Heading{
+    font-size: 12px;
+    font-weight: bolder;
+}
+.Post_Description{
+    margin: 5px;
+    padding: 5px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Post_image img{
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+}
+.Post_image video{
+    width: 100%;
+    height: auto;    
+}
+.Post_Reply{
+    padding: 5px;
+    padding-left: 10px;
+}
+.Post_Reply p{
+    font-size: 12px;
+    color: gray;
+    margin-top: -17px;
+    margin-left: 65px;
+}
+.Post_Response{
+    display: flex;
+    flex-direction: row;    
+    margin-top: 10px;
+    padding-left: 10px;
+    color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid lightgray;
+}
+.post_icon{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 12px;
+    margin-right: 13px;
+}
+.post_name{
+    padding: 5px;    
+}
+.post_icon:hover{
+    color: black;
+}
+
+/*Post Dropdown button*/
+/*Dropdown Button*/
+ .dropdown button{
+    background-color: white;
+    border: none;
+    margin-top: -40px;
+    padding-right: 10px;
+    float: right;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;           
+}
+/*Post Section Ends*/
+
+
+/*Right Sidebar Widget Section Starts*/
+.LinkedIn_Widgets{
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    width: 20%;  
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: fit-content;    
+}
+
+.Widget_Heading h2{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.Widget_Heading h3{
+    font-size: 11px;
+}
+.Widget_Heading h4{
+    font-size: 9px;
+    color: gray;
+}
+.Widget_Heading button{
+    float: right;
+    margin-top: -22px;
+    margin-left: 5px;   
+    display: flex;
+    flex-direction: row;
+    padding: 0px 4px 0px 2px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-style: italic;
+    cursor: pointer;
+}
+.LinkedIn_News{
+    border-radius: 10px;
+    background-color: white;
+    margin: 5 10 10 0px;
+    padding: 20px;
+}
+.LinkedIn_Courses{
+    border-radius: 10px;
+    background-color: white;
+    margin: 5 10 10 0px;
+    padding: 20px;
+}
+.Feed_Addition{
+    border-radius: 10px;
+    background-color: white;
+    margin: 5 10 10 0px;
+    padding: 20px;    
+}
+.Feed_Options{    
+    display: flex;
+    flex-direction: row;
+}
+.Feed_Info{
+    position: relative;
+    margin: 4px;
+    padding: 5px;
+    text-align: left;    
+}
+.Feed_Info h3{
+    font-size: 13px;
+}
+.Feed_Info h4{
+    font-size: 10px;
+    color: gray;
+}
+.Follow button{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding: 3px 20px 3px 20px;
+    border-radius: 15px;
+    font-size: 11px;
+    border: 0.1px solid black;
+}
+.Follow button:hover{
+    color: white;
+    background-color: gray;
+}
+
+.Feed_Options img{
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+    margin-top: 25%;  
+}
+
+/*Right Sidebar Widget Section Ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
